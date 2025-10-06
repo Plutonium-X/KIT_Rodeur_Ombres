@@ -1,7 +1,7 @@
 BACKUP ~fr_ombre/backup~
 AUTHOR ~esprit - duracuir@hotmail.com~
 
-VERSION ~v1.2~
+VERSION ~v1.3~
 
 README ~fr_ombre/readme/rodeur_ombre-readme-%LANGUAGE%.html~ ~rodeur_ombre/readme/fr_ombre-readme-english.html~
 
