@@ -1,5 +1,5 @@
-# Kit de Rodeur de l'ombre
-Un rodeur maléfiques qui peut invoquer différents types d'ombres.
+# Kit de Rôdeur de l'ombre
+Un rôdeur maléfiques qui peut invoquer différents types d'ombres.
 
 -Avantages :
 - Aux niveaux 1, 6, 12, 18, 24, 30 et 36, il gagne la capacité Détection des illusions.
