@@ -1,0 +1,27 @@
+2DA V1.0
+*
+                  ABILITY         ICON       STRREF       MIN_LEV       MAX_LEVEL      NUM_ALLOWED      PREREQUISITE     EXCLUDED_BY       ALIGNMENT_RESTRICT
+Ability1          GA_FRROD11      *          *            1             40             20               *                *                 *
+Ability2          GA_FRROD12      *          *            1             40             20               *                *                 *
+Ability3          GA_FRROD13      *          *            1             40             20               *                *                 *
+Ability4          GA_SPCL922      *          *            1             40             20               *                *                 *
+Ability5          GA_SPCL904      *          *            1             40             20               *                *                 *
+Ability6          GA_SPCL905      *          *            1             40             20               *                *                 *
+Ability7          GA_SPCL906      *          *            1             40             20               *                *                 *
+Ability8          GA_SPCL907      *          *            1             40             20               *                *                 *
+Ability9          GA_SPCL908      *          *            1             40             20               *                *                 *
+Ability10         GA_SPCL909      *          *            1             40             20               *                *                 *
+Ability11         *               *          *            *             *              *                *                *                 *
+Ability12         *               *          *            *             *              *                *                *                 *
+Ability13         *               *          *            *             *              *                *                *                 *
+Ability14         *               *          *            *             *              *                *                *                 *
+Ability15         *               *          *            *             *              *                *                *                 *
+Ability16         *               *          *            *             *              *                *                *                 *
+Ability17         *               *          *            *             *              *                *                *                 *
+Ability18         *               *          *            *             *              *                *                *                 *
+Ability19         *               *          *            *             *              *                *                *                 *
+Ability20         *               *          *            *             *              *                *                *                 *
+Ability21         *               *          *            *             *              *                *                *                 *
+Ability22         *               *          *            *             *              *                *                *                 *
+Ability23         *               *          *            *             *              *                *                *                 *
+Ability24         *               *          *            *             *              *                *                *                 *

@@ -1,0 +1,57 @@
+@0  = ~Shadow Ranger Kit~
+@1  = ~You must have ToB, BGT, BG:EE, BG2:EE, IWD:EE or EET installed to install this mod.~
+@2  = ~Your SoD game needs to be modmerged before mods can be installed on this game. Check the readme for more information and a link to download the DLC Merger or Modmerge.~
+
+/* ----- *
+ *  Kit  *
+ * ----- */
+@11 = ~shadow ranger~
+@12 = ~Shadow Ranger~
+@13 = ~SHADOW RANGER: Shadow rangers are a secret sect of wanderers intimately affiliated with Shadow druids. They advocate the usage of powers of darkness and the shadows that inhabit them. They do not hesitate from resorting to Machiavellian schemes to achieve their goal. They usually pay homage to the dark goddess, Shar, and rumors say they whisper her name when they slit their target's throat in the darkness of the night. Shadow rangers are dangerous fighters who are able to call the shadows to their aid.
+
+Advantages:
+
+- May cast Detect illusion once per day. Gains 1 use at 1st level and an additional use every 6 levels thereafter.
+- 2d level: Gains a +5% bonus to Move Silently and Hide In Shadows. Gains an additional +5% bonus at 6th, 10th, 14th, 18th, 22th, 26th, 30th, 35th and 39th levels. 
+- May use Summon Greater Shade Wolf ability once per day. Gains 1 use at 10th level and an additional use every 6 levels thereafter up to 34th level.
+- May use Conjure Shadows ability once per day (calls forth 3 shadows). Gains 1 use at 15th level and an additional use at 21th and 27th levels.
+
+Disadvantages:
+
+- Race restricted to human, elf and half-elf.
+- May only use short swords, daggers, short bows, light crossbows, sticks, darts and slings.
+- May not wear metal armor.
+- Alignment restricted to lawful evil and neutral evil.~
+
+/* --------------- *
+ *  Kit abilities  *
+ * --------------- */
+@21 = ~Detect Illusion~
+@22 = ~Conjure Shadows~
+@23 = ~Summon Greater Shade Wolf~
+@24 = ~+5 to Hide in Shadows and Move Silently~
+
+/* ---------------------- *
+ *  High level abilities  *
+ * ---------------------- */
+@31 = ~Summon Devil Shade~
+@32 = ~Summon Devil Shade
+
+Devil Shades are amongst the most evil and vicious creatures, from the depths of the Abyss, to prey on the denizens of Faerun. They only appears at night and kills their prey by absorbing life force from their prey.~
+
+@33 = ~Merge with shadows~
+@34 = ~Merge with shadows
+
+Merging with shadows allows the Shadow Ranger to become invisible immediately and makes them undetectable by divination spells such as True Sight. Only high level Shadow rangers can use this skill.~
+
+@35 = ~Summon Fallen Deva~
+@36 = ~Summon Fallen Deva
+
+Range: 120 ft.
+Duration: 4 rounds + 1 round/level
+Casting time: 5
+Area of Effect: Special
+Saving Throw: None
+
+This spell opens an abyssal gate and calls forth a demonic deva to fight at the caster's side until the spell expires or the deva's earthly avatar is slain.~
+// From vanilla #63831

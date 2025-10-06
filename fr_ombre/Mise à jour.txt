@@ -1,0 +1,6 @@
+v1.3
+- Mise à jour du script fl#add_kit_ee.tpa
+- Correction : toutes les capacités d'invocation n'avaient que 61% de chance de fonctionner. (remplacé par un pourcentage aléatoire)
+- Correction : toutes les capacités d'invocation avaient un temps d'incantation de 16. (remplacée par un temps d'incantation de 5, correspondant aux hlas)
+- Correction : L'Invocation d'Ombre démoniaque était permanente. (remplacée par une durée 4 tours)
+- Correction : La Fusion avec les ombres ne protégeait pas contre la divination.

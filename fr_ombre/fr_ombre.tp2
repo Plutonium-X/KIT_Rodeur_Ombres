@@ -1,0 +1,177 @@
+BACKUP ~fr_ombre/backup~
+AUTHOR ~esprit - duracuir@hotmail.com~
+
+VERSION ~v1.2~
+
+README ~fr_ombre/readme/rodeur_ombre-readme-%LANGUAGE%.html~ ~rodeur_ombre/readme/fr_ombre-readme-english.html~
+
+ALWAYS
+
+	/* -------------------------- *
+	 *    Sod: Modmerge check.    *
+	 * -------------------------- */
+	ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) BEGIN FAIL @2 END
+
+	/* ---------------------------------------------------------------------------------------------- *
+	 *    Convert strings to UTF-8 for BGEE/BG2EE                                                     *
+	 *    No exception, everything needs to be converted                                              *
+	 * -----------------------------------------------------------------------*---------------------- */
+	ACTION_DEFINE_ARRAY fr_reload BEGIN setup END
+	ACTION_DEFINE_ARRAY fr_noconvert BEGIN END
+	LAF HANDLE_CHARSETS
+		INT_VAR
+		infer_charset = 1
+		STR_VAR
+		tra_path = EVAL ~%MOD_FOLDER%/lang~
+		noconvert_array = fr_noconvert
+		reload_array = fr_reload
+	END
+
+END
+
+
+LANGUAGE ~Francais~
+		 ~french~
+		 ~fr_ombre/lang/french/setup.tra~
+
+LANGUAGE ~Russian (translation by Gingerrr and Aerie.ru)~
+		 ~russian~
+		 ~fr_ombre/lang/russian/setup.tra~
+
+LANGUAGE ~English~
+		 ~english~
+		 ~fr_ombre/lang/english/setup.tra~
+
+
+/* ================================================= *
+ *  Profil de Rôdeur de l'ombre - Shadow Ranger kit  *
+ * ================================================= */
+BEGIN @0
+DESIGNATED 0 LABEL ~rodeur_de_l_ombre~
+REQUIRE_PREDICATE GAME_IS ~tob bgt bgee bg2ee eet iwdee~ @1 /* You must have ToB, BGT,BG:EE, BG2:EE, IWD:EE or EET installed to install this mod. */
+
+
+/* ------------- *
+ *  Install kit  *
+ * ------------- */
+INCLUDE ~fr_ombre/lib//fl#add_kit_ee.tpa~
+ADD_KIT ~SHADOWRANGER~
+// CLASS WEAPON PROFICIENCIES____________________________________________________________________________________
+// CLASWEAP			SMALL_SWORD	LARGE_SWORD		BLUNT       MISSILE     BOW         SPIKED      AXE         SPEAR
+~SHADOWRANGER            1           0           1           1           1           1           0           1~		// Types d'armes autorisés
+// WEAPON PROFICIENCIES______________________________________________________________________________________________________
+//                                      B       T   S           F   Q             S S
+//                                      A       W   C           L   U             W I T
+//                      L S             S   S   O   I           A   A           T O N W
+//                      A M             T L H   H   M   W       I   R           W R G O
+//                      R A             A O O   A   I   A       L   T C   S     O D L -
+//                      G L           M R N R   N   T   R     H M   E R L H     - & E W E E E E E E E E E E E E E E E E E E E
+//                      E L       S   I D G T   D K A D H     A O   R O O O     H S W E X X X X X X X X X X X X X X X X X X X
+//                      S S   S B P   S S S S   E A R A A   S L R   S S N R   S A H E A T T T T T T T T T T T T T T T T T T T
+//                      W W   P L I   S W W W   D T W G M C P B N M T S G T D L N I A P R R R R R R R R R R R R R R R R R R R
+//                      O O B E U K A I O O O A S A A G M L E E I A A B B B A I D E P O A A A A A A A A A A A A A A A A A A A
+//                      R R O A N E X L R R R X W N K E E U A R N C F O O O R N E L O N 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2
+// WEAPPROF.2DA         D D W R T D E E D D D E O A I R R B R D G E F W W W T G D D N S                 0 1 2 3 4 5 6 7 8 9 0
+~SHADOWRANGER           0 2 2 2 0 2 0 2 0 0 2 0 0 0 0 2 0 0 0 0 0 2 2 0 2 0 0 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~	// Compétences autorisées
+// MINIMUM KIT STATS_______________________________________________
+// ABCLASRQ.2DA         STR      DEX    CON     INT     WIS     CHR
+~SHADOWRANGER           13       13      14      0       14      0~							// Scores de caractéristiques minimaux nécessaires.
+// KIT STAT MODIFIERS_______________________________________________
+// ABCLSMOD.2DA         STR      DEX    CON     INT     WIS     CHR
+~SHADOWRANGER            0        0      0       0       0       0~							// Modificateurs des scores de caractéristiques.
+// REQUIREMENTS TO DUAL TO THIS KIT________________________________
+// ABDCDSRQ.2DA         STR      DEX    CON     INT     WIS     CHR
+~SHADOWRANGER            17      17      0       0       17      0~							// Caractéristiques minimales pour se jumeler VERS le kit.
+// REQUIREMENTS TO DUAL FROM THIS KIT______________________________
+// ABDCSCRQ.2DA         STR      DEX    CON     INT     WIS     CHR
+~SHADOWRANGER            15      15      0       0       15      0~							// Caractéristiques minimales pour se jumeler DEPUIS le kit.
+// ALIGNMENT RESTRICTIONS_________________________________________________________________
+// ALIGNMNT.2DA         LG      LN      LE      NG      NN      NE      CG      CN      CE
+~SHADOWRANGER            0       0       1       0       0       1       0       0       0~	// Alignements autorisés.
+// DUAL CLASS OPTIONS______________________________________________
+// DUALCLASS.2DA        FIG     CLE     MAG     THI     DRU     RAN
+~SHADOWRANGER            0       0       0       0       0       0~							// Possibilités de jumelage.
+// KIT ABILITIES 2DA FILE (path to CLAB-type file)
+~fr_ombre/2da/frombre.2da~																	// Habilités gagnées par niveau.
+// RACIAL KIT AVAILABILITY___________________________________________________________
+// KITTABLE.2DA    P = Paladin - H = Humain - E = Elf - HE = Half-Elf - HL = Halfling
+~K_R_H K_R_E K_R_HE~																		// Races et classes acceptant le kit.
+// UNUSABLE FLAGS AND KIT BASE CLASS
+// CLASSES: Mage = 1, Fighter = 2, Cleric = 3, Thief = 4, Bard = 5, Paladin 6, Druid = 11, Ranger = 12, Sorcerer = 19, Monk = 20
+// KITLIST.2DA
+~0x00008000 12~	// Autorisation d'objets - 0x00008000 = FERALAN
+// HIGH LEVEL ABILITIES ABBREVIATION
+// LUABBR.2DA
+~FRROD~																						// Habiletés de Haut niveau.
+// TOB STARTING EQUIPMENT_________________________________________________________________________________________________________________________________________________
+//                                                                                   B                                                                                   W
+//                          S                                    C            A      R                                                                                   E
+//                 A        H                     R      R       L     B      M      A              A         A         A         M        M        M       M     M      A
+//                 R        I        H            I      I       O     O      U      C      B       M         M         M         I        I        I       I     I      P
+//                 M        E        E      B     N      N       A     O      L      E      E       M         M         M         S        S        S       S     S      O
+//                 O        L        L      A     G      G       C     T      E      R      L       O         O         O         C        C        C       C     C      N
+// 25STWEAP.2DA    R        D        M      G     1      2       K     S      T      S      T       1         2         3         1        2        3       4     5      1
+                ~LEAT20     *      HELM19 BAG27 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BOLT06,40 BULL03,40 POTN52,5 POTN04,5 POTN14,5 HAMM07 SW1H27 STAF08~
+
+// CHARACTER CREATION KIT DESCRIPTION
+// KITLIST.2DA
+SAY @11				// LOWER = Nom du kit en minuscules
+SAY @12				// MIXED = Nom du kit en minuscules avec majuscule au début
+SAY @13				// HELP  = Description du kit
+
+
+// EE specific
+// -----------
+ACTION_IF GAME_IS ~BGEE BG2EE IWDEE EET~ BEGIN
+	LAF fl#add_kit_ee STR_VAR kit_name = SHADOWRANGER END
+END
+
+COPY ~fr_ombre/2da/lufrrod.2da~  ~override~
+
+
+/* ------------------------------------------------- *
+ *  Install Special Abilities (capacités spéciales)  *
+ * ------------------------------------------------- */
+
+// Détection des illusions
+// -----------------------
+COPY ~fr_ombre/spells/frrod01.spl~	~override~
+	SAY NAME1 @21
+
+// Convocation d'ombres
+// --------------------
+COPY ~fr_ombre/spells/frrod02.spl~	~override~
+	SAY NAME1 @22
+
+// Convocation de loup de l'ombre majeur
+// -------------------------------------
+COPY ~fr_ombre/spells/frrod03.spl~	~override~
+	SAY NAME1 @23
+
+// Bonus : +5 % Se cacher dans l'ombre et Déplacement silencieux
+// -------------------------------------------------------------
+COPY ~fr_ombre/spells/frrod04.spl~	~override~
+	SAY NAME1 @24
+
+
+/* -------------- *
+ *  Install HLAs  *
+ * -------------- */
+
+// Convocation d'ombre démoniaque
+// ------------------------------
+COPY ~fr_ombre/chn/frrod11.spl~	~override~
+	SAY NAME1 @31
+	SAY UNIDENTIFIED_DESC @32
+
+// Fusion avec les ombres
+// ----------------------
+COPY ~fr_ombre/chn/frrod12.spl~	~override~
+	SAY NAME1 @33
+	SAY UNIDENTIFIED_DESC @34
+
+// Convocation de Déva déchue
+// --------------------------
+COPY ~fr_ombre/chn/frrod13.spl~	~override~
+	SAY NAME1 @35
+	SAY UNIDENTIFIED_DESC @36
