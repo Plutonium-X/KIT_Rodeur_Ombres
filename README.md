@@ -14,7 +14,7 @@ Un rodeur maléfiques qui peut invoquer différents types d'ombres.
 - Doit être d'alignement loyal mauvais ou neutre mauvais.
 
 -Capacités de haut niveau supplémentaires :
-- Convocation de Déva déchu
+- Convocation de Déva déchu (durée gérée jusqu'au niveau 40)
 - Fusion avec les ombres (invisibilité majeure + immunité à la Divination)
 - Convocation d'Ombre démonique (4 tours)(les mêmes que dans la Tour de Garde, et lance des sorts comme un magicien de niveau 13)
 
