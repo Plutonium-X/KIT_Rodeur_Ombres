@@ -24,19 +24,19 @@
 --------------------
 # Shadow Ranger Kit
 
--Advantages:
+Advantages:
 - At levels 1, 6, 12, 18, 24, 30, and 36, the character gains the Detect illusion ability.
 - At levels 2, 6, 10, 14, 18, 22, 26, 30, 35, and 39, they gain a 5% bonus to Move Silently and Hide in the Shadows.
 - At levels 10, 16, 22, 28, and 34, the character gains the ability Major Shadow Wolf Summoning.
 - At levels 15, 21, and 27, the character can summon up to 3 shadows.
 
--Disadvantages:
+Disadvantages:
 - Only humans, elves, and half-elves can become Shadow Rangers.
 - Can only use short swords, daggers, shortbows, light crossbows, staffs, darts, and slings.
 - Cannot wear metal armor.
 - Must be of Lawful Evil or Neutral Evil alignment.
 
--Additional high-level abilities:
+Additional high-level abilities:
 - Summon Fallen Deva (duration managed up to level 40)
 - Merge with the Shadows (greater invisibility + immunity to Divination)
 - Summon Demonic Shadow (4 turns) (same as in the Watchtower, and casts spells like a 13th-level wizard)
