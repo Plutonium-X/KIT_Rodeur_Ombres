@@ -20,3 +20,27 @@
 -Notes :
 - La capacité de convocation de loups d'ombre convoque 1D2 loups pendant 50 secondes. Ils ne drainent pas la force mais tapent fort.
 - La capacité de convocation d'ombre convoque 1D3 ombres pendant 50 secondes. Elles ne drainent pas la force mais peuvent lancer des sorts comme un magicien de niveau 13.
+
+--------------------
+# Shadow Ranger Kit
+
+- Benefits:
+- At levels 1, 6, 12, 18, 24, 30, and 36, the character gains the Detect illusion ability.
+- At levels 2, 6, 10, 14, 18, 22, 26, 30, 35, and 39, they gain a 5% bonus to Move Silently and Hide in the Shadows.
+- At levels 10, 16, 22, 28, and 34, the character gains the ability Major Shadow Wolf Summoning.
+- At levels 15, 21, and 27, the character can summon up to 3 shadows.
+
+- Disadvantages:
+- Only humans, elves, and half-elves can become Shadow Rangers.
+- Can only use short swords, daggers, shortbows, light crossbows, staffs, darts, and slings.
+- Cannot wear metal armor.
+- Must be of Lawful Evil or Neutral Evil alignment.
+
+- Additional high-level abilities:
+- Summon Fallen Deva (duration managed up to level 40)
+- Merge with the Shadows (greater invisibility + immunity to Divination)
+- Summon Demonic Shadow (4 turns) (same as in the Watchtower, and casts spells like a 13th-level wizard)
+
+-Notes:
+- The Summon Shadow Wolves ability summons 1D2 wolves for 50 seconds. They do not drain Strength but deal heavy damage.
+- The Summon Shadows ability summons 1D3 shadows for 50 seconds. They do not drain Strength but can cast spells like a level 13 mage.
